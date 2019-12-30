@@ -1,4 +1,3 @@
-<!-- messageテーブル -->
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
@@ -10,7 +9,6 @@
 - belongs_to :group
 - belongs_to :user
 
-<!-- usersテーブル -->
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -21,7 +19,6 @@
 - has_many :messages
 - has_many :groups_users
 
-<!-- groupsテーブル -->
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false|
@@ -32,7 +29,6 @@
 - has_many :groups_users
 
 
-<!-- groups_usersテーブル -->
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
