@@ -1,0 +1,31 @@
+.main_chat
+  .main_chat__header
+    .main_chat_header_left_box
+      %h2.main_chat_header_left_box__cullent_group
+        大輔
+      %ul.main_chat_header_left_box__member_list
+        Member:
+        %li.main_chat_header_left_box_member__list_member iguchi
+    =link_to "#" do
+      .main_chat_header_edit_btn Edit
+
+  .main_chat_message
+    .main_chat_message__data
+      .main_chat_message_info
+        %p.main_chat_message_info__talker iguchi
+        %p.main_chat_message_info__date 1月
+      %p.main_chat_meesage_text aaaa
+    .main_chat_message_data
+      .main_chat_message_info
+        %p.main_chat_message_info__talker daisuke
+        %p.main_chat_message_info__date 2月
+      %p.main_chat_meesage_text bbbb
+
+  .message_form
+    %form.new_message
+      .input_box
+        %input{type: "text", class:"input_box_text", placeholder: "type a message"}
+        %label{class: "input_box_image"}
+          = icon("fas","image")
+          %input{type: "file", class: "input_box_image_file"}
+      %input{type: "submit", class: "submit_btn"}
