@@ -6,7 +6,7 @@
       %ul.main_chat_header_left_box__member_list
         Member:
         %li.main_chat_header_left_box_member__list_member iguchi
-    =link_to "#" do
+    = link_to edit_user_path(params[:group_id]) do
       .main_chat_header_edit_btn Edit
 
   .main_chat_message
