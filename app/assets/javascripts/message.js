@@ -57,8 +57,8 @@ $('#new_message').on('submit', function(e){
   .done(function(data){
     var html = buildHTML(data);
     $('.message').append(html);
-       $('form')[0].reset();
-       $('.message').animate({ scrollTop: $('.message')[0].scrollHeight});
+    $('form')[0].reset();
+    $('.message').animate({ scrollTop: $('.message')[0].scrollHeight});
   })
   .fail(function() {
     alert("メッセージ送信に失敗しました");
