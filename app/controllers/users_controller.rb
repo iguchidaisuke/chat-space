@@ -1,8 +1,7 @@
 class UsersController < ApplicationController
 
-def indedx
+def index
   return nil if params[:keyword] == ""
-  @users = User.where()
   @users = User.where(['name LIKE ?', "%#{params[:keyword]}%"] ).where.not(id: current_user.id).limit(10)
   respond_to do |format|
     format.html
